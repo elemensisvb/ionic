@@ -1,0 +1,10 @@
+page-bloglist {
+  ion-label{
+    display: flex !important;
+  }
+
+  ion-card-content{
+    height: 42vh;
+    padding: unset !important;
+  }
+}

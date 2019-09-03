@@ -1,0 +1,42 @@
+<!--
+  Generated template for the BloglistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Blog List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <flash-card *ngFor="let blog of bloglist">
+    <div class="flash-card-front">
+      <div class="blog-title" text-center>
+        {{blog.title.rendered}}
+      </div>
+      <ion-item>
+        <img src="{{blog.image}}">
+      </ion-item>
+    </div>
+    <div class="flash-card-back" (click)="openBlogDetail(blog)">
+      <ion-card class="flash-card-top">
+        <ion-item>
+          <ion-card-content text-wrap>
+            <div class="blog-title" text-center>
+              {{blog.title.rendered}}
+            </div>
+            <div text-center>
+              Posted On: {{blog.date_gmt | date}}
+            </div>
+            <div padding-top text-center>
+              {{blog.excerpt.rendered}}
+              <div class="text-bold" text-center>Read more...</div>
+            </div>
+          </ion-card-content>
+        </ion-item>
+      </ion-card>
+    </div>
+  </flash-card>
+</ion-content>

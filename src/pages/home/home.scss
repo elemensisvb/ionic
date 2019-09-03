@@ -1,3 +1,26 @@
 page-home {
+  // p{
+  //   background: color($colors, primary);
+  // }
+  .landing {
+    background-image: url('/assets/imgs/cropped-omo_travel-1.png');
+    background-position: center;
+    // background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-button{
+    position: absolute;
+    bottom: 1%;
+    width: 99%;
+    background: color($colors, green);
+    color: $control-font-color;
+    font-weight: $button-md-strong-font-weight;
+  }
+
+  ion-content > .scroll-content{
+    padding: unset !important;
+  }
 
 }

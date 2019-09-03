@@ -14,3 +14,35 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$control-font: fantasy;
+$control-font-color: black;
+$control-font-weight: 600;
+
+* {
+    font-family: $control-font;
+}
+ion-header .back-button {
+    color: color($colors, dark);
+    font-weight: $button-md-strong-font-weight;
+}
+ion-title, ion-header {
+  background: color($colors, green);
+}
+.toolbar-background {
+  background: color($colors, green);
+}
+.blog-title {
+  font-weight: bold;
+  font-size: 3vh;
+}
+.text-bold {
+  font-weight: $control-font-weight;
+}
+// .title.title-md {
+//     // position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     text-align: center;
+// }

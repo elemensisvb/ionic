@@ -1,0 +1,41 @@
+[{
+    "slug": "machu-picchu",
+    "image": "./assets/imgs/tour/Machu-Picchu.jpg"
+  },
+  {
+    "slug": "pyramids-of-giza",
+    "image": "./assets/imgs/tour/pyramids-of-giza.jpg"
+  },
+  {
+    "slug": "uluru",
+    "image": "./assets/imgs/tour/uluru.jpg"
+  },
+  {
+    "slug": "great-wall-of-china",
+    "image": "./assets/imgs/tour/wall-of-china.jpg"
+  },
+  {
+    "slug": "angkor-wat",
+    "image": "./assets/imgs/tour/angkor-wat-towers.jpg"
+  },
+  {
+    "slug": "galapagos-islands",
+    "image": "./assets/imgs/tour/galapagos-islands.jpg"
+  },
+  {
+    "slug": "grand-canyon",
+    "image": "./assets/imgs/tour/grand-canyon.jpg"
+  },
+  {
+    "slug": "iguazu-falls",
+    "image": "./assets/imgs/tour/iguazu-falls.jpg"
+  },
+  {
+    "slug": "taj-mahal",
+    "image": "./assets/imgs/tour/taj-mahal.jpg"
+  },
+  {
+    "slug": "teotihuacan",
+    "image": "./assets/imgs/tour/teotihuacan.jpeg"
+  }
+]
