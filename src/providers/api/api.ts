@@ -21,5 +21,8 @@ export class ApiProvider {
   getList() {
     return this.http.get(this.apiURL + '/posts?order=asc').map(res => res);
   }
+  getComments(postID) {
+    return this.http.get(this.apiURL + '/comments?post='+postID).map(res => res);
+  }
 
 }

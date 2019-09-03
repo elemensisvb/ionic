@@ -20,5 +20,30 @@
     <ion-card-content padding-top>
       <p>{{blogDatas.content.rendered}}</p>
     </ion-card-content>
+    <ion-row>
+      <ion-col class="comment-header"> 
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div (click)="showComments(blogDatas.openComment)">{{commentLength}} Comments</div>
+        </button>
+      </ion-col>
+    </ion-row>
+    <div  *ngIf="this.blogDatas.openComment">
+      <ion-card *ngFor="let comment of commentDatas">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{comment.author_url}}">
+          </ion-avatar>
+          <h2>{{comment.author_name}}</h2>
+          <p>{{comment.date_gmt | date}}</p>
+        </ion-item>
+        <ion-card-content>
+          {{comment.content.rendered}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+
   </ion-card>
+
+
 </ion-content>

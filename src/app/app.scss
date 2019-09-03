@@ -49,3 +49,6 @@ ion-title {
   height: 100%;
   text-align: center;
 }
+.comment-header > button > span {
+  color: color($colors, green);
+}
