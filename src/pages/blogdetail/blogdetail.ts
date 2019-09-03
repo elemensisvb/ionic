@@ -18,6 +18,7 @@ import * as _ from 'lodash';
 })
 export class BlogdetailPage {
 
+  loading: any;
   blogDatas: any;
   commentDatas: any;
   commentLength: any;
@@ -43,6 +44,14 @@ export class BlogdetailPage {
     });
 
     this.loading.present();
+  }
+  async presentToast(msg) {
+    const toast = await this.toastCtrl.create({
+      message: msg,
+      duration: 2000,
+      position: 'top'
+    });
+    toast.present();
   }
   // to get comments from api service
   getCommentsList() {
