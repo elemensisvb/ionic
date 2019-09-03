@@ -12,11 +12,12 @@ page-home {
 
   .bottom-button{
     position: absolute;
-    bottom: 1%;
+    bottom: 0%;
     width: 99%;
     background: color($colors, green);
     color: $control-font-color;
     font-weight: $button-md-strong-font-weight;
+    height: 8vh;
   }
 
   ion-content > .scroll-content{
